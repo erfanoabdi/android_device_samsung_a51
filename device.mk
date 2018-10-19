@@ -20,6 +20,9 @@ ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 endif
 
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9610-common/universal9610-common.mk)
 
