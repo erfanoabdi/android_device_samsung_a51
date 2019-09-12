@@ -1,0 +1,13 @@
+service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.0-service.a51
+    interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
+    class hal
+    user system
+    group system
+    shutdown critical
+
+on boot
+    # FOD Brightness
+    chown system system /sys/class/lcd/panel/mask_brightness
+
+    # TSP Command
+    chown system system /sys/class/sec/tsp/cmd

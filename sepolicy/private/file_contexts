@@ -1,0 +1,2 @@
+# Inscreen Fingerprint HAL
+/system/bin/hw/lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.a51     u:object_r:hal_fingerprint_inscreen_a51_exec:s0
