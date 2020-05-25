@@ -8,6 +8,7 @@ service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.i
 on boot
     # FOD Brightness
     chown system system /sys/class/lcd/panel/mask_brightness
+    chmod 0644 /sys/class/lcd/panel/mask_brightness
 
     # TSP Command
     chown system system /sys/class/sec/tsp/cmd

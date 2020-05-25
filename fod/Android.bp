@@ -33,3 +33,11 @@ cc_binary {
         "vendor.samsung.hardware.biometrics.fingerprint@3.0",
     ],
 }
+
+cc_library_static {
+    name: "libfod_extension.a51",
+    srcs: ["FodExtension.cpp"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger/CompositionEngine/include"
+    ],
+}
